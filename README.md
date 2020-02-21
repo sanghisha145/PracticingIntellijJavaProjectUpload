@@ -27,3 +27,12 @@ Now challenge was how to upload this on github:
 6.$ git remote add origin <repo-name>
 
 7. $ git push origin master
+
+
+Making it executable jar, whatever artifactId and version we passed, same name jar is created by default if we dont add <packaging> in pom.xml
+  
+  $ mvn clean 
+  
+  $ mvn compile
+  
+  $ mvn package
