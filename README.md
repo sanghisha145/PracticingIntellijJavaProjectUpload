@@ -31,8 +31,14 @@ Now challenge was how to upload this on github:
 
 Making it executable jar, whatever artifactId and version we passed, same name jar is created by default if we dont add <packaging> in pom.xml
   
-  $ mvn clean 
+      $ mvn clean 
   
-  $ mvn compile
+      $ mvn compile
   
-  $ mvn package
+      $ mvn package
+  
+  To verify if jar is working
+      
+        $ jar tf target/Example-1.1-SNAPSHOT.jar
+        $  java -jar target/Example-1.1-SNAPSHOT.jar
+ 
