@@ -46,6 +46,7 @@ Making it executable jar, whatever artifactId and version we passed, same name j
  The -jar option only works if the JAR file is an executable JAR file, which means it must have a manifest file with a Main-Class attribute in it. 
  
  Hence, I added this  property inside pom.xml and Boom!!!!
+```
                 <build>
                     <configuration>
                       <archive>
@@ -55,4 +56,5 @@ Making it executable jar, whatever artifactId and version we passed, same name j
                     </archive>
                     </configuration>
                 <build>
+```                
   
