@@ -41,8 +41,8 @@ Making it executable jar, whatever artifactId and version we passed, same name j
         $ jar tf target/Example-1.1-SNAPSHOT.jar
         $ java -jar target/Example-1.1-SNAPSHOT.jar
  
- This threw error: no main manifest attribute, in target/Example-1.1-SNAPSHOT.jar
+ This threw ERROR: no main manifest attribute, in target/Example-1.1-SNAPSHOT.jar
  
  The -jar option only works if the JAR file is an executable JAR file, which means it must have a manifest file with a Main-Class attribute in it. 
  
- Hence, I added <build><configuration><mainClass> property inside pom.xml and Boom!!!!
+ Hence, I added "<build><configuration><mainClass>" property inside pom.xml and Boom!!!!
